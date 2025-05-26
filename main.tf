@@ -1,10 +1,4 @@
-provider "azurerm" {
-  features {}
-}
-
-provider "azuread" {
-}
-
-provider "microsoft.authorization" {
-  alias = "authz"
+resource "azurerm_resource_group" "rg" {
+  name     = "rg-terraform-iam-demo"
+  location = "centralindia"
 }
